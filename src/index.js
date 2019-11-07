@@ -16,4 +16,7 @@
         
         document.getElementById("Finaltext").value = window.cipher.decode (displace , des);
     };
+    document.getElementById("Limpiar").addEventListener("click", () => {
+        window.location.reload();
+    });
     
