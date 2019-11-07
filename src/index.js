@@ -1,16 +1,19 @@
-function code () { 
-    document.getElementById("Cifrar").addEventListener("click" () => {
+    document.getElementById("Cifrar").addEventListener("click", encode);
+    
+    function encode () { 
         let cif = document.getElementById("Textconvert").value; 
-        let displacement = document.getElementById("desplazar").value;
-        window.cipher.code(Cifrar , desplazar);
-    document.getElementById("TextoConvertido").innerHTML = window.cipher.code(Cifrar , desplazar);
-    })
-};
-function encode () {
-    document.getElementById("Descifrar").addEventListener("click" () => {
-        let des = document.getElementById("TextoConvertido").value;
-        let displace = document.getElementById("desplazar").value;
-        window.cipher.code(Descifrar , desplazar);
-    document.getElementById("TextoConvertido").innerHTML = window.cipher.decode (Descifrar , desplazar);
-    })
-};
+        let uppercaseLetters = cif.toUpperCase ();
+        let displacement = parseInt(document.getElementById("offset").value);
+   
+        document.getElementById("Finaltext").value = window.cipher.encode(uppercaseLetters , displacement);
+    };
+    
+    document.getElementById("Descifrar").addEventListener("click", decode);
+    
+    function decode () {    
+        let des = document.getElementById("Finaltext").value;
+        let displace = document.getElementById("offset").value;
+        
+        document.getElementById("Finaltext").value = window.cipher.decode (displace , des);
+    };
+    
