@@ -1,4 +1,49 @@
 body{
 background-image:url(https://marvel-live.freetls.fastly.net/canvas/2019/10/c6d00d017c1a4b9f899b50f35e3155e6?quality=95&fake=.png);
 }
-.
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: #4b0803 3px 2px;
+    font-family:pacifico, cursive;
+}
+button{
+    box-shadow:inset 0px 39px 0px -24px #e67a73;
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #e96e6e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:pacifico, cursive;
+	font-size:15px;
+	padding:10px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+button:hover {
+	background-color:#eb675e;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+textarea{
+    border: 2px solid #e04bd4;
+	border-radius: 10px;
+	height: 80px;
+	width: 300px;
+}
+#offset {
+	width:40px;
+	height:20px;
+    border:2px dashed rgb(233, 11, 166);
+    cursor:url(myBall.cur),auto;
+}
+p{
+    color: white;
+    font-family:pacifico, cursive;
+}
+#reference {
+	color: whitesmoke;
+}

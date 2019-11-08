@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Barbie Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
     <body>
       <div id="Title" >
         <div align="center">
-          <h1>Crea códigos secretos y divertidos mensajes utilizando el Cifrado César &#129325;</h1>
+          <h1>Crea códigos y mensajes secretos &#129325;</h1>  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <p> Juega y envía divertidos mensajes a tus amig@s mientras aprendes a cerca del <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" id="reference" target="_blank"> cifrado cesar c:</a></p>
         </div>
         <div>
-          <p>¿Cuantos espacios quieres desplazarte?</p>
+          <div align ="center">
+          <p style="font-family:pacifico, cursive">¿Cuantos espacios quieres desplazarte?</p>
           <input type="number" id="offset" size="5" min="1" max="100" >
-          <p>Por favor, ingresa tu texto.</p>
+          <p style="font-family:pacifico, cursive">Por favor, ingresa tu texto.</p>
           <textarea id="Textconvert" rows="10" cols="35" placeholder="Escribe aquí tu texto." maxlength="100" value=""></textarea> 
-          <p>Y ahora, ¡a divertirnos!</p>
+          <p style="font-family:pacifico, cursive">Y ahora, ¡a divertirnos!</p>
           <button id="Cifrar"> Cifrar </button>
           <button id="Descifrar"> Descifrar </button>
-          <p>Disfruta tu mensaje (;</p>
+          <p style="font-family:pacifico, cursive">Disfruta tu mensaje (;</p>
           <textarea id="Finaltext" rows="10" cols="35" placeholder="Mira la magia aquí." maxlength="100"></textarea> 
           <br>
           <br> 
           <button id="Limpiar">Limpiar texto</button>
         </div>
+      </div>
       </div>
 
   <script src="cipher.js"></script>
